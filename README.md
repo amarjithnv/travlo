@@ -1,7 +1,4 @@
-# travlo
-travlo is travel informative website
-
-# 🌍 Travel Guide Website
+# 🌍 Travel Guide Website - Travlo
 
 A simple and elegant travel guide website built using **HTML, CSS, and JavaScript**, without the need for a database, APIs, or backend. This website provides essential travel information, images, weather updates, and a budget planner.
 
