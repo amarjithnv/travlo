@@ -5,6 +5,8 @@ travlo is travel informative website
 
 A simple and elegant travel guide website built using **HTML, CSS, and JavaScript**, without the need for a database, APIs, or backend. This website provides essential travel information, images, weather updates, and a budget planner.
 
+![Homepage Preview](assets/homepage-screenshot.png)
+
 ## 📌 Features
 - **Carousel Section:** Displays top wonders in India with smooth scrolling.
 - **Modern Footer Design:** Includes newsletter subscription, navigation links, app download buttons, and social media icons.
