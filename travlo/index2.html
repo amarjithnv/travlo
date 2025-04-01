@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Web Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body style="margin:0%;">
+        <div style="position: relative;box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.19);">
+            <img src="resources\background.jpg" style="width: 100%; height: 400px;filter: brightness(55%);">
+            <div class="logo">
+                <img src="resources\logo.png" style="width: 200px; height: 50px;">
+            </div>
+            <div style="position: absolute;top:16px;right:50px;">
+                <a href=""><b class="menu">Home</b></a>
+                <a href=""><b class="menu">Tourist Spots</b></a>
+                <a href=""><b class="menu">Top Picks</b></a>
+                <a href=""><b class="menu">About Us</b></a>
+                <button type="button" class="sign_in_button"><b><a href="" style="color:white;">Sign In</a></b></button>
+            </div>
+
+            <div style="position:absolute;top:250px;left:50%;transform:translate(-50%, -50%);text-align:center;color: white;">
+                <h1>Explore. Discover. Travel – Your Ultimate Guide to Adventure!</h1>
+            </div>
+            
+            <div class="input-container">
+                <div class="search_icon">
+                    <i class="fa fa-search icon" style="margin-top:15px;"></i>
+                </div>
+                <input type="text" class="search_menu" placeholder="Search destinations...">                
+            </div>
+
+        </div>
+
+        <div style="text-align:center;margin-top:80px">
+            <hr>
+            <h1>Popular Destinations</h1>
+            <hr>            
+        </div>
+
+        <div style="margin-top:50px;display: flex;justify-content: center;">
+            <div class="destination">
+                <img src="resources\kerala-cover.jpeg" class="destination_cover">
+                <h2>Kerala</h2>
+                <p style="font-size:12px;color: rgb(99, 97, 97);padding:12px">"God’s Own Country" – Backwaters, houseboats, lush greenery, and traditional Ayurvedic treatments.</p>
+            </div>
+            <div class="destination">
+                <img src="resources\jaipur-cover.jpeg" class="destination_cover">
+                <h2>Jaipur</h2>
+                <p style="font-size:12px;color: rgb(99, 97, 97);padding:12px">"The Pink City" – Explore royal palaces, vibrant bazaars, and stunning forts like Hawa Mahal & Amber Fort.</p>
+            </div>
+            <div class="destination">
+                <img src="resources\goa-cover.jpg" class="destination_cover">
+                <h2>Goa</h2>
+                <p style="font-size:12px;color: rgb(99, 97, 97);padding:12px">"The Beach Paradise" – Golden beaches, thrilling nightlife, water sports, and delicious seafood.</p>
+            </div>
+        </div>
+
+        <div style="margin-top:50px;display: flex;justify-content: center;">
+            <div class="destination">
+                <img src="resources\agra-cover.jpeg" class="destination_cover">
+                <h2>Agra</h2>
+                <p style="font-size:12px;color: rgb(99, 97, 97);padding:12px">"Home of the Taj Mahal" – Witness the beauty of one of the Seven Wonders of the World.</p>
+            </div>
+            <div class="destination">
+                <img src="resources\manali-cover.jpeg" class="destination_cover">
+                <h2>Manali</h2>
+                <p style="font-size:12px;color: rgb(99, 97, 97);padding:12px">"A Snowy Retreat" – Adventure sports, scenic landscapes, and breathtaking Himalayan views.</p>
+            </div>
+        </div>
+
+        <div style="text-align:center;margin-top:80px">
+            <hr>
+            <h1>Contact Us</h1>
+            <hr>            
+        </div>
+
+        <div style="position: relative; width: 100%; height: 100vh; display: flex; align-items: center; justify-content: center;">
+            
+            <img src="resources/cover-img.jpg" style="position: absolute; width: 100%; height: 100vh; object-fit: cover; filter: brightness(55%); z-index: -1;">
+    
+            
+            <div style="display: flex; width: 80%; max-width: 1000px; justify-content: space-between; align-items: center;padding: 20px; border-radius: 10px;">
+                
+                
+                <div style="color: white; font-size: 28px; font-weight: bold; flex: 1;margin-right: 50px;">
+                    <h1 style="margin: 0;">Feel Free to Contact</h1>
+                    <p style="font-size: 16px; line-height: 1.5;">We are here to assist you with any travel inquiries.</p>
+                </div>
+    
+                
+                <div style="background: rgba(255, 255, 255, 0.9); padding: 20px; border-radius: 12px;max-width: 400px;">
+                    <h2 style="text-align: center; margin-bottom: 15px;">Contact Us</h2>
+                    <form>
+                        <div style="display: flex;position:relative;margin-bottom:10px;max-width: 400px;">
+                            <icon class="fa fa-user" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: gray;"></icon>     
+                            <input type="text" id="name" placeholder="Enter your name" required style="width: 100%; padding: 10px 10px 10px 35px;border-radius: 5px; border: 0">                                 
+                        </div>
+
+                        <div style="display: flex;position:relative;margin-bottom:10px;max-width: 400px;">
+                            <icon class="fa fa-envelope" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: gray;"></icon>     
+                            <input type="text" id="name" placeholder="Enter your Email ID" style="width: 100%; padding: 10px 10px 10px 35px;border-radius: 5px; border: 0">                                 
+                        </div>
+                
+                        <!-- Phone Field (Country Code + Phone) -->
+                        <div style="position: relative; margin-bottom: 10px; width: 100%;">
+                            <!-- Phone Icon (over entire container) -->
+                            <i class="fa fa-phone" style="position: absolute; left: 10px;top: 50%; transform: translateY(-50%); color: gray;"></i>
+                            <!-- Flex container for code + number -->
+                            <div style="display: flex; align-items: center; margin-left: 35px; ">
+                                <!-- Country Code -->
+                                <select required 
+                                        style="width: 80px; padding: 10px; border-radius: 5px; border: 1px solid #ccc; margin-right: 10px;">
+                                    <option value="+1">+1 (USA)</option>
+                                    <option value="+91" selected>+91 (India)</option>
+                                    <option value="+44">+44 (UK)</option>
+                                    <option value="+61">+61 (Australia)</option>
+                                    <option value="+81">+81 (Japan)</option>
+                                    <option value="+49">+49 (Germany)</option>
+                                    <option value="+33">+33 (France)</option>
+                                    <option value="+86">+86 (China)</option>
+                                    <option value="+971">+971 (UAE)</option>
+                                    <option value="+55">+55 (Brazil)</option>
+                                    <option value="+7">+7 (Russia)</option>
+                                    <option value="+27">+27 (South Africa)</option>
+                                    <option value="+34">+34 (Spain)</option>
+                                </select>
+                
+                                <!-- Phone Number -->
+                                <input type="tel" 
+                                       placeholder="Enter phone number" 
+                                       required
+                                       style="width: calc(100% - 90px); padding: 10px; border-radius: 5px; border: 1px solid #ccc;" />
+                            </div>
+                        </div>
+                        <div style="display: flex;position:relative;margin-bottom:10px;max-width: 400px;">
+                            
+                            <i class="fa fa-comment" style="position: absolute; left: 10px; top: 10px; color: gray;">
+                            </i>
+                            <textarea placeholder="Write your message here..." 
+                                      rows="4" 
+                                      required
+                                      style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                            </textarea>
+                        </div>
+                        <button type="submit" style="width: 100%; padding: 10px; margin-top: 10px; background-color: #ff6600; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+                            Send Message
+                        </button>
+                    </form>
+                </div>                
+    
+            </div>
+        </div>        
+    </body>
+</html>
