@@ -1,6 +1,467 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>About Us</title>
-    </head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Munnar - Travlo</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .card {
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .card h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #008aff;
+      }
+
+      .card p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+      }
+
+      .cta-section {
+        background: url("/resources/background-img.jpg") no-repeat center center;
+        background-size: cover;
+        padding: 80px 20px;
+        text-align: center;
+        color: white;
+        border-radius: 15px;
+        position: relative;
+      }
+
+      /* Adding shadow to the background image */
+      .cta-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4); /* Shadow effect */
+        border-radius: 15px;
+        z-index: 0;
+      }
+
+      .cta-section h2 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        z-index: 1; /* Ensures text is on top of the shadow */
+        position: relative;
+      }
+
+      .cta-section p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1; /* Ensures text is on top of the shadow */
+        position: relative;
+      }
+
+      .cta-section a {
+        padding: 15px 40px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        border-radius: 30px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        z-index: 1; /* Ensures button is on top of the shadow */
+        position: relative;
+      }
+
+      .cta-section a:hover {
+        background-color: orange;
+      }
+
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="max-width: 100%">
+      <!-- Header Section -->
+      <header style="position: relative; color: white">
+        <!-- Background Video -->
+        <video
+          autoplay
+          muted
+          loop
+          style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          "
+        >
+          <source src="/resources/background-vid.mp4" type="video/mp4" />
+        </video>
+
+        <!-- Overlay -->
+        <div
+          style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+          "
+        ></div>
+
+        <!-- Header Content -->
+        <div
+          style="
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            flex-wrap: wrap;
+          "
+        >
+          <img src="/resources/logo.png" alt="Logo" style="max-width: 20%" />
+
+          <nav>
+            <a
+              href="/index.html"
+              style="
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                font-size: 12px;
+                margin: 0 15px;
+              "
+              >Home</a
+            >
+            <a
+              href="/about.html"
+              style="
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                font-size: 12px;
+                margin: 0 15px;
+              "
+              >About</a
+            >
+            <a
+              href="/contact.html"
+              style="
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                font-size: 12px;
+                margin: 0 15px;
+              "
+              >Contact</a
+            >
+            <a
+              href="/login.html"
+              style="
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                font-size: 12px;
+                margin: 0 15px;
+              "
+              >Login</a
+            >
+          </nav>
+
+          <!-- Sign In Button -->
+          <button
+            style="
+              background: orange;
+              color: white;
+              border: none;
+              padding: 10px 20px;
+              border-radius: 25px;
+              font-size: 12px;
+              cursor: pointer;
+            "
+          >
+            Sign In
+          </button>
+        </div>
+
+        <!-- Mission Section -->
+        <div
+          style="
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 50px 20px;
+            text-align: left;
+            position: relative;
+            z-index: 1;
+          "
+        >
+          <div style="width: 100%; max-width: 600px; padding: 20px">
+            <h1 style="font-size: 40px; margin-bottom: 15px">Our Mission</h1>
+            <p
+              style="
+                font-size: 16px;
+                line-height: 1.3;
+                max-width: 90%;
+                font-weight: 500;
+              "
+            >
+              Our mission is to make travel easy, affordable, and memorable.
+              From local adventures to bucket-list journeys, we connect
+              travelers with their dream destinations.
+            </p>
+          </div>
+        </div>
+      </header>
+      <!-- End Header Section -->
+
+      <!-- Main Content Section -->
+      <main style="padding: 60px 20px">
+        <!-- Who We Are Section -->
+        <section style="display: flex; flex-wrap: wrap; background: #fff">
+          <div style="flex: 1; min-width: 300px; padding: 20px">
+            <img
+              src="resources/about-us.jpg"
+              alt="About Us"
+              style="width: 100%; border-radius: 10px"
+            />
+          </div>
+          <div style="flex: 1; min-width: 300px; padding: 20px">
+            <h2>Who We Are</h2>
+            <p>
+              At Travlo, we’re more than a travel website — we’re a passionate
+              team of explorers committed to making travel easy, inspiring, and
+              unforgettable.
+            </p>
+            <ul>
+              <li>🌍 Curated Destinations</li>
+              <li>🗺️ Personalized Itineraries</li>
+              <li>📞 24/7 Support</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section
+          style="padding: 60px 20px; background: #f0f8ff; text-align: center"
+        >
+          <h2>Our Story</h2>
+          <p style="max-width: 800px; margin: auto">
+            Travlo was born out of a simple love for travel and discovery. We
+            began as a group of friends who wanted to share our passion for
+            exploring new places and experiences. Our goal is to provide
+            travelers with the best resources, local insights, and personalized
+            guidance to make every trip a unique and unforgettable journey.
+          </p>
+          <div class="card-container">
+            <div class="card">
+              <h3>🌟 Our Values</h3>
+              <p>
+                We believe in trust, transparency, and personalized care for
+                every traveler.
+              </p>
+            </div>
+            <div class="card">
+              <h3>💡 Innovation</h3>
+              <p>
+                We continuously improve our services to meet the ever-changing
+                needs of modern travelers.
+              </p>
+            </div>
+            <div class="card">
+              <h3>🌍 Global Reach</h3>
+              <p>
+                We aim to bring unique and hidden destinations to travelers all
+                over the world.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section
+          style="padding: 60px 20px; background: #fff; text-align: center"
+        >
+          <h2>Why Choose Us</h2>
+          <div
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              margin-top: 40px;
+            "
+          >
+            <div class="card">
+              <h3>✅ Easy Planning</h3>
+              <p>
+                From destination research to booking, it’s all in one place.
+              </p>
+            </div>
+            <div class="card">
+              <h3>🌐 Local Insights</h3>
+              <p>Travel like a local with expert-curated suggestions.</p>
+            </div>
+            <div class="card">
+              <h3>✈️ Seamless Booking</h3>
+              <p>Real-time updates, secure payments, and no hassle.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Professional Start Planning Section -->
+        <section class="cta-section">
+          <h2>Ready to Begin Your Next Adventure?</h2>
+          <p>
+            Start planning your perfect trip with just a few clicks. Discover
+            personalized itineraries, local gems, and exclusive deals tailored
+            to your preferences.
+          </p>
+          <a href="#">Start Planning Now</a>
+        </section>
+      </main>
+      <!-- End Main Content Section -->
+
+      <!-- Footer Section -->
+      <footer
+        style="
+          background-color: black;
+          color: white;
+          text-align: center;
+          padding: 40px 20px;
+          font-family: 'Inter', sans-serif;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <div
+          style="
+            background-color: rgba(255, 166, 0, 0.909);
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 800px;
+            margin: auto;
+          "
+        >
+          <h2 style="margin: 0; font-size: 28px; font-weight: bold">
+            Get updates instantly
+          </h2>
+          <p style="font-size: 14px; margin: 10px 0">
+            <strong
+              >To get regular updates on latest weather, sightings, and more,
+              just enter your email and you'll be notified with every
+              happening.</strong
+            >
+          </p>
+          <div style="margin-top: 15px">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              style="
+                padding: 12px;
+                width: 60%;
+                border: none;
+                border-radius: 30px;
+                outline: none;
+              "
+            />
+            <button
+              style="
+                background-color: black;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 30px;
+                cursor: pointer;
+                font-weight: bold;
+              "
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            max-width: 1000px;
+            margin: auto;
+          "
+        >
+          <div style="text-align: left; max-width: 300px">
+            <h3 style="font-size: 16px">Sign up for our newsletter</h3>
+            <p>We send important updates only a few times a year.</p>
+            <button
+              style="
+                background-color: #008aff;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 25px;
+                cursor: pointer;
+              "
+            >
+              Subscribe
+            </button>
+          </div>
+
+          <div style="text-align: left">
+            <h3>Help and Services</h3>
+            <p>Explore Us</p>
+            <p>Why Us?</p>
+            <p>Contact</p>
+          </div>
+
+          <div style="text-align: left">
+            <h3>To Explore</h3>
+            <p>Tourist Spots</p>
+            <p>Top Picks</p>
+            <p>Trending Spots</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 40px">
+          <a href="#" style="margin: 0 15px; color: white"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="#" style="margin: 0 15px; color: white"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a href="#" style="margin: 0 15px; color: white"
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
