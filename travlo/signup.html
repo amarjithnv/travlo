@@ -33,22 +33,23 @@
                 <div style="display: flex; width: 90%; max-width: 1200px; height: 90%; background-color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border-radius: 10px; overflow: hidden;">
             
                     <!-- Left Image -->
-                    <img src="resources/login-cover.png" alt="login cover" style="width: 50%; height: 100%; object-fit: cover; border-radius: 10px 0 0 10px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">
+                    <img src="resources/signup-cover.jpg" alt="login cover" style="width: 50%; height: 100%; object-fit: cover; border-radius: 10px 0 0 10px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">
             
                     <!-- Right Form Section -->
                     <div style="padding: 30px; display: flex; flex-direction: column; flex: 1;justify-content: space-evenly;">
                         <div style="line-height:1;">
-                            <h2>Welcome Back</h2>
-                            <p style="color:grey;font-size:12px">Don't Have an Account? <b style="color:blue"><a href="signup.html" style="text-decoration: none;">Sign Up</a></b></p>
+                            <h2>Welcome To Travlo</h2>
+                            <p style="color:grey;font-size:12px">Have an Account? <b style="color:blue"><a href="login.html" style="text-decoration: none;">Sign In</a></b></p>
                         </div>
                         <div style="display: flex;justify-content: center;padding:0px 80px">
                             <form style="display: flex; flex-direction: column; gap: 10px; width: 100%;">
+                                <label style="font-size: 14px; color: #333;text-align: left;">Enter User Name</label>
+                                <input type="text" id="username" name="username" placeholder="Name" required style="padding: 15px; border: 0; border-radius: 5px; width: 100%;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">
                                 <label style="font-size: 14px; color: #333;text-align: left;">Enter Email ID</label>
-                                <input type="text" id="EmailId" name="username" placeholder="Email Id" required style="padding: 15px; border: 0; border-radius: 5px; width: 100%;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">
+                                <input type="text" id="email" name="email" placeholder="Email Id" required style="padding: 15px; border: 0; border-radius: 5px; width: 100%;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">
                                 <label style="font-size: 14px; color: #333;text-align: left;">Enter Password</label>
-                                <input type="password" id="password" name="password" placeholder="Password" required style="padding: 15px; border: 0; border-radius: 5px; width: 100%;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">
-                                <b style="color:grey;font-size: 10px;text-align: left;">Forgot Password ?</b>
-                                <button type="submit" onclick="loginValidate()" style="padding: 10px 1px; background: orange; color: white; border: none; border-radius: 25px; cursor: pointer; width: 100%;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">Login</button>
+                                <input type="password" id="spassword" name="password" placeholder="Password" required style="padding: 15px; border: 0; border-radius: 5px; width: 100%;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">                                
+                                <button type="submit" onclick="signUpValidate()" style="padding: 10px 1px; background: orange; color: white; border: none; border-radius: 25px; cursor: pointer; width: 100%;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);margin-top:10px;">Sign Up</button>
                             </form>
                         </div>
                     </div>
